@@ -7,7 +7,7 @@ class SpecialClass:
         self.params = params
     def __add__(self, obj: object):
         "Overloading +"
-        return self.params + "separtor-in-between" + obj.params
+        return self.params + " separtor-in-between " + obj.params
 
 if __name__ == '__main__':
     obj_1 = SpecialClass("Sachin")
