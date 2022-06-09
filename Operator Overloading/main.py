@@ -10,7 +10,7 @@ class SpecialClass:
         return self.params + " separtor-in-between " + obj.params
     def __mul__(self, obj: object):
         "Overloading * (multiplication)"
-        return self.params + obj.params if not self.params in obj.params else self.params
+        return "Combined: " + self.params + obj.params if not self.params in obj.params else "Single: " + self.params
 
 if __name__ == '__main__':
     obj_1 = SpecialClass("Sachin")
