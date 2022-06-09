@@ -16,3 +16,12 @@ if __name__ == '__main__':
     obj_1 = SpecialClass("Sachin")
     obj_2 = SpecialClass("Acharya")
     print(obj_1 + obj_2) # Adding Two Object - printing out
+
+    # Checking Condition one
+    print(obj_1 * obj_2) # Not
+
+    obj_1 = SpecialClass("Sachin")
+    obj_2 = SpecialClass("Sachin")
+    
+    # Equal
+    print(obj_1 * obj_2)
