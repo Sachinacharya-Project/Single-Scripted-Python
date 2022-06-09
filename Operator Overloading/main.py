@@ -14,13 +14,16 @@ class SpecialClass:
         return "Combined: " + self.params + obj.params if not self.params in obj.params else "Single: " + self.params
 
 if __name__ == '__main__':
+    # Checking + overloading
     obj_1 = SpecialClass("Sachin")
     obj_2 = SpecialClass(" Acharya")
     print(obj_1 + obj_2) # Adding Two Object - printing out
 
+    # Checking * overloading
     # Checking Condition one
     print(obj_1 * obj_2) # Not
 
+    # Checking Condition two
     obj_1 = SpecialClass("Sachin")
     obj_2 = SpecialClass("Sachin")
     
