@@ -8,6 +8,9 @@ class SpecialClass:
     def __add__(self, obj: object):
         "Overloading +"
         return self.params + " separtor-in-between " + obj.params
+    def __mul__(self, obj: object):
+        "Overloading * (multiplication)"
+        return self.params + obj.params if not self.params in obj.params else self.params
 
 if __name__ == '__main__':
     obj_1 = SpecialClass("Sachin")
